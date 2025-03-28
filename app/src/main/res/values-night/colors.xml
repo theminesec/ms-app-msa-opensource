@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  Override per brand  -->
+    <!--  [optional] Override per night theme  -->
+    <color name="brand_primary">#21AB46</color>
+    <color name="brand_primary_foreground">#F0FDF4</color>
+    <color name="brand_secondary">#0A307A</color>
+    <color name="brand_secondary_foreground">#EDF2FD</color>
+</resources>

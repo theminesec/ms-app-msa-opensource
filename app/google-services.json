@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "550741442009",
+    "project_id": "minesec-softpos-d852e",
+    "storage_bucket": "minesec-softpos-d852e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:550741442009:android:fbb49f41a0d91bfb6a2dc8",
+        "android_client_info": {
+          "package_name": "com.minesec.msa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "550741442009-cu14qmiis0kikrma2f6ugh25eb52sm89.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBha1wcODrGom6IBRLLvWaXxMdQFmBeXqA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "550741442009-cu14qmiis0kikrma2f6ugh25eb52sm89.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:550741442009:android:fbb49f41a0d91bfb6a2dc8",
+        "android_client_info": {
+          "package_name": "com.minesec.msa.stage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "550741442009-cu14qmiis0kikrma2f6ugh25eb52sm89.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBha1wcODrGom6IBRLLvWaXxMdQFmBeXqA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "550741442009-cu14qmiis0kikrma2f6ugh25eb52sm89.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
