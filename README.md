@@ -28,7 +28,8 @@ The `token` will be managed by our customer support team, if you want to request
 Download jdk8: https://adoptium.net/temurin/releases/?version=8    (.msi)
 
 Change environment variables
-![image](https://github.com/user-attachments/assets/b470c0b2-c1b2-4a17-b3a0-a08a389e822c)
+![image](https://github.com/user-attachments/assets/552b40b3-4968-47cb-834c-db5b5792e5d2)
+
 
 
 ## 4. Update Application Information
@@ -43,7 +44,7 @@ namespace = "com.minesec.b"
 applicationId = "com.minesec.b"
 ```
 Refactor the highlighted folder name to match your namespace and applicationId <br>
-![image](https://github.com/user-attachments/assets/1d3d9f52-7196-4203-90f4-e2ad60af5eaf) <br>
+![image](https://github.com/user-attachments/assets/556abfaa-bd2a-45f8-9880-06d00aaaaa32)<br>
 
 Edit `package_name` in app/google-services.json
 ```kotlin
@@ -87,7 +88,7 @@ In build.gradle.kts(:app), modify the string to match the name of your license:
 ### Change application logos
 In Android Studio, click View > Tool Windows > Resource Manager <br>
 Click + > Import Drawables to open a file browser. <br>
-![image](https://github.com/user-attachments/assets/cef77d8f-a42b-44f0-b28a-bd5075e784f1)  <br>
+![image](https://github.com/user-attachments/assets/cc2ab0f2-ebaf-4667-b8b7-d1bc11ffdf06)<br>
 Go to the folder that you save your logos <br>
 Click on it , click ok 
 Import your logo
