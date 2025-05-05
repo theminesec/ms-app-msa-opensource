@@ -1,4 +1,4 @@
-# ms-app-msa-opensource
+![image](https://github.com/user-attachments/assets/559ad407-7f4c-49bd-b3f7-8146aac56036)# ms-app-msa-opensource
 # Application Setup Guide
 
 ## 1. Setup the maven credential
@@ -10,7 +10,9 @@ In your machine's global gradle properties:
 # minesec client registry
 GITHUB_USERNAME=minesec-product-support
 GITHUB_TOKEN={token-value}
-
+```
+Replace the placeholder path with your actual keystore location:
+```text file="~/.gradle/gradle.properties"
 MS_KS_FILE=../keystore/your_keystore.jks
 
 MS_KS_STORE_TYPE=jks
@@ -45,13 +47,11 @@ applicationId = "com.minesec.b"
 Refactor the package name (highlighted in blue) to match your `namespace` and `applicationId` <br>
 ![image](https://github.com/user-attachments/assets/e7553471-be5b-4399-b0f1-31b6e58ed895)<br>
 
-Edit `package_name` in app/google-services.json
-```kotlin
-Example:
-"package_name": "com.minesec.b"
-"package_name": "com.minesec.b.stage"
-```
+app/google-services.json:
+This json file is configured in the firebase (google) and download from google firebase console. You have to login to your firebase to configure your own application information(applicationId) and then generate the json file
+
 ### b. Version number
+> **Note**: MineSec will provide the `customerId`
 Edit  `app/google-services.json` <br>
 
 ```kotlin
@@ -71,6 +71,7 @@ Edit  `app/google-services.json` <br>
 
 ## 5. Replace the License File
 Replace the license file in your application project with the appropriate one.
+> **Note**: The required LICENSE file will be provided by MineSec.Please contact us if you have not received it before you start rebranding the app.
 
 License file is found in the `assets` folder.
 
