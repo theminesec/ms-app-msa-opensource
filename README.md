@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/559ad407-7f4c-49bd-b3f7-8146aac56036)# ms-app-msa-opensource
+# ms-app-msa-opensource
 # Application Setup Guide
 
 ## 1. Setup the maven credential
