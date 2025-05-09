@@ -27,13 +27,18 @@ The `token` will be managed by our customer support team, if you want to request
 
 ## 2. set compile environment to jdk8
 > **Note**: the source code project is built based on JDK8. Please kindly choose JDK8 to compile the project
-Download jdk8: https://adoptium.net/temurin/releases/?version=8    (.msi)
+Download jdk8: https://adoptium.net/temurin/releases/?version=8    (choose Windows x64 and .msi) <br>
+​Run the Installer <br>
 
-Change environment variables
-![image](https://github.com/user-attachments/assets/552b40b3-4968-47cb-834c-db5b5792e5d2)
+Go to `File` > `Settings` > `Build, Execution, Deployment` > `Build Tools` > `Gradle`​
+![Screenshot 2025-05-09 144326](https://github.com/user-attachments/assets/3a3fc2d5-584c-404b-b45b-e4ce7b426027)
+Select `Gradle JDK` <br>
 
-<br><br>
+Select the file that you just installed.
+![Screenshot 2025-05-09 144422](https://github.com/user-attachments/assets/bf57357f-6839-4b6f-a5e2-657aae370596)
+Click `Sync Now` after configuration.
 
+<br>
 
 ## 3. Update Application Information
 Update the basic information of your application, such as the **package name** and **version number**.
