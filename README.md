@@ -33,8 +33,9 @@ Download jdk8: https://adoptium.net/temurin/releases/?version=8    (choose Windo
 Go to `File` > `Settings` > `Build, Execution, Deployment` > `Build Tools` > `Gradle`​
 ![Screenshot 2025-05-09 144326](https://github.com/user-attachments/assets/3a3fc2d5-584c-404b-b45b-e4ce7b426027)
 Select `Gradle JDK` <br>
+select `Add JDK from disk...` <br>
 
-Select the file that you just installed.
+Locate and select the file that you just installed.<br>
 ![Screenshot 2025-05-09 144422](https://github.com/user-attachments/assets/bf57357f-6839-4b6f-a5e2-657aae370596)
 Click `Sync Now` after configuration.
 
