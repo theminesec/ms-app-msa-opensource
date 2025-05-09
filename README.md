@@ -1,5 +1,4 @@
-# ms-app-msa-opensource
-# Application Setup Guide
+# Application Rebranding Guideline
 
 ## 1. Setup the maven credential
 > **Note**: You might want to set the credential in your machine's global `gradle.properties` instead of the project's `gradle.properties` to avoid accidentally committing it into git.
@@ -23,14 +22,17 @@ MS_KS_KEY_ALIAS=your_key_alias
 
 MS_KS_KEY_PASS=your_key_password
 ```
-The `token` will be managed by our customer support team, if you want to request one please [contact us](mailto:support@theminesec.com?subject=Request%20for%20registry%20credential)
+The `token` will be managed by our customer support team, if you want to request one please [contact us](mailto:support@theminesec.com?subject=Request%20for%20registry%20credential) <br>
+<br>
 
-## 2. Change jdk22 to jdk8
+## 2. set compile environment to jdk8
+> **Note**: the source code project is built based on JDK8. Please kindly choose JDK8 to compile the project
 Download jdk8: https://adoptium.net/temurin/releases/?version=8    (.msi)
 
 Change environment variables
 ![image](https://github.com/user-attachments/assets/552b40b3-4968-47cb-834c-db5b5792e5d2)
 
+<br><br>
 
 
 ## 3. Update Application Information
