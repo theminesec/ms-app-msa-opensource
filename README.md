@@ -1,6 +1,23 @@
 # Application Rebranding Guideline
 
-## 1. Setup the maven credential
+## 1. Prepare Development Environment
+### 1.1 Set compile environment to jdk8
+> **Note**: the source code project is built based on JDK8. Please kindly choose JDK8 to compile the project
+Download jdk8: https://adoptium.net/temurin/releases/?version=8    (choose Windows x64 and .msi) <br>
+​Run the Installer <br>
+
+Go to `File` > `Settings` > `Build, Execution, Deployment` > `Build Tools` > `Gradle`​
+![Screenshot 2025-05-09 144326](https://github.com/user-attachments/assets/3a3fc2d5-584c-404b-b45b-e4ce7b426027)
+Select `Gradle JDK` <br>
+select `Add JDK from disk...` <br>
+
+Locate and select the file that you just installed.<br>
+![Screenshot 2025-05-09 144422](https://github.com/user-attachments/assets/bf57357f-6839-4b6f-a5e2-657aae370596)
+Click `Sync Now` after configuration.
+
+<br>
+
+### 1.2 Setup the maven credential
 > **Note**: You might want to set the credential in your machine's global `gradle.properties` instead of the project's `gradle.properties` to avoid accidentally committing it into git.
 
 In your machine's global gradle properties:
@@ -25,26 +42,9 @@ MS_KS_KEY_PASS=your_key_password
 The `token` will be managed by our customer support team, if you want to request one please [contact us](mailto:support@theminesec.com?subject=Request%20for%20registry%20credential) <br>
 <br>
 
-## 2. set compile environment to jdk8
-> **Note**: the source code project is built based on JDK8. Please kindly choose JDK8 to compile the project
-Download jdk8: https://adoptium.net/temurin/releases/?version=8    (choose Windows x64 and .msi) <br>
-​Run the Installer <br>
-
-Go to `File` > `Settings` > `Build, Execution, Deployment` > `Build Tools` > `Gradle`​
-![Screenshot 2025-05-09 144326](https://github.com/user-attachments/assets/3a3fc2d5-584c-404b-b45b-e4ce7b426027)
-Select `Gradle JDK` <br>
-select `Add JDK from disk...` <br>
-
-Locate and select the file that you just installed.<br>
-![Screenshot 2025-05-09 144422](https://github.com/user-attachments/assets/bf57357f-6839-4b6f-a5e2-657aae370596)
-Click `Sync Now` after configuration.
-
-<br>
-
-## 3. Update Application Information
+## 2. Update Application Information
 Update the basic information of your application, such as the **package name** and **version number**.
-
-### a. Package name
+### 2.1 Update package name and applicationId
 Edit `namespace` and `applicationId` in `app/build.gradle.kts` file <br>
 
 ```kotlin
@@ -58,7 +58,7 @@ Refactor the package name (highlighted in blue) to match your `namespace` and `a
 `app/google-services.json`: <br>
 This json file is configured in the firebase (google) and download from google firebase console. You have to login to your firebase to configure your own application information(applicationId) and then generate the json file
 
-### b. Version number
+### 2.2 Update application version
 > **Note**: MineSec will provide the `customerId`
 Edit  `app/google-services.json` <br>
 
@@ -77,7 +77,7 @@ Edit  `app/google-services.json` <br>
         val customerId = 111 //changes were made
 ```
 
-## 4. Replace the License File
+### 2.3 Replace license
 Replace the license file in your application project with the appropriate one.
 > **Note**: The required LICENSE file will be provided by MineSec. Please contact us if you have not received it before you start rebranding the app.
 
@@ -89,7 +89,9 @@ In `app/build.gradle.kts`, modify the string to match the name of your license:
 
 ![image](https://github.com/user-attachments/assets/6a19bc9e-19f3-4c1a-b7ab-5be86deff6e3)
 
-## 5. Prepare Application Logos
+
+## 3. Branding & Visual Adjustment
+### 3.1 Replace the logo
 - **Full Logo**: Displayed on the activation UI page.
 - **Square Logo**: Used in some loading indicators.
 - Recommended sizes:
@@ -97,7 +99,7 @@ In `app/build.gradle.kts`, modify the string to match the name of your license:
     - **Square Logo**: `60 × 60`
 - Place these vector files in both the `drawable` and `drawable-night` folders in your application.
 
-### Change application logos
+### 3.1 Change application logos
 In Android Studio, click `View` > `Tool Windows` > `Resource Manager` <br>
 Click `+` > `Import Drawables` to open a file browser. <br>
 ![image](https://github.com/user-attachments/assets/cc2ab0f2-ebaf-4667-b8b7-d1bc11ffdf06)<br>
@@ -114,18 +116,18 @@ For square logo, edit `logo_square.xml`
 <bitmap android:src="@drawable/your_square_logo_name"
 ```
 
-## 6. Update Colors
+### 3.2 Update Color and theme
 Go to `app\src\main\res\values` and `app\src\main\res\values-night`<br>
 Modify the `colors.xml` file with your own color scheme(change the color code (#??????)). <br>
 Go to settings on your phone to switch between `light mode` and `dark mode`
 
-## 7. Change app name
+## 4. Change app name and localization
+### 4.1 Change app name
 Edit both `strings.xml` files in `app/src/main/res/values/strings.xml` and `app/src/debug/res/values/strings.xml` <br>
 ```
 <string name="app_name">your_app_name</string>
 ```
-
-## 8. Update Strings for Localization
+### 4.2 Update Strings for Localization
 Create `app/src/main/res/values-xx/` (e.g., `values-zh/` for Chinese) <br>
 Create `strings.xml` file under values-xx folder <br>
 Copy `strings.xml` from `app/src/main/res/values/` and paste into `strings.xml` from `app/src/main/res/values-xx/` <br>
@@ -138,6 +140,7 @@ Translate ALL strings
 #Chinese (values-zh/strings.xml)
 <string name="login">登录</string>
 ```
+
 Customize the `strings.xml` file with your own information. Ensure support for multiple languages by updating the following directories:
 - `values` (default)
 - `values-ar` (Arabic)
@@ -149,7 +152,7 @@ Customize the `strings.xml` file with your own information. Ensure support for m
 - `values-zh` (Chinese)
 - `values-ckb` (Kurdish)
 
-### Change the language in the app
+#### Change the language in the app
 Click the icon on the top left corner<br>![image](https://github.com/user-attachments/assets/401df812-d134-4c79-b6e4-c3ede1658bbc) <br>
 Click on `Settings` <br>
 Scroll to the bottom<br>![image](https://github.com/user-attachments/assets/82a18e59-af2f-4b91-8452-7ae852983582) <br>
@@ -158,6 +161,14 @@ Click on `English` to change the language
 > **Note**: Some error messages are generated by the backend server and cannot be customized into local language for now.
 
 
-
-## 9. Customize Application Features
+## 5. Customize Application Features
 Modify the `App.kt` file to configure and customize the features of your application.
+
+### 5.1 
+### 5.2
+## 6. 
+### 6.1
+### 6.2
+
+
+
