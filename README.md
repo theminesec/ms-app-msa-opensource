@@ -164,11 +164,25 @@ Click on `English` to change the language
 ## 5. Customize Application Features
 Modify the `App.kt` file to configure and customize the features of your application.
 
-### 5.1 
-### 5.2
-## 6. 
-### 6.1
-### 6.2
 
+## 6. Building the app for release
+`Build`>`Generate Signed App Bundle or APK...`
 
+![image](https://github.com/user-attachments/assets/fe2a1392-af3d-4345-b36b-5e6d3c856ce7)
 
+### 6.1 Generate aab file
+Select the ​​`Android App Bundle`​​ radio button (first option)
+### 6.2 Generate apk file
+Select the ​​`APK`​​ radio button (second option)
+
+### 6.3 If you do not have a key store
+Click `Create new...` and Android Studio will guide you through the process of creating a key store
+
+### 6.4 If you already have an existing key store
+Click `Choose existing...` and select the key store that you created before
+
+Make sure your credentials in machine's global `gradle.properties` matches the key store that you are using
+Fill in the  `Keystore password`, `key alias` and `Key password` 
+Click `Next`
+Choose `release`
+Click `Create`
