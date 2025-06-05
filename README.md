@@ -110,7 +110,7 @@ Copy the code and paste it in `logo_full.xml` or `logo_square.xml` ( found in ap
 ### 3.2 Update Color and theme
 Go to `app\src\main\res\values` and `app\src\main\res\values-night`<br>
 Modify the `colors.xml` file with your own color scheme(change the color code (#??????)). <br>
-> **Note**: If you are using color with alpha(transparency)​​,note that Android Studio expects the ​ARGB format (#AARRGGBB) <br>
+> **Note**: If you are using color with alpha(transparency),note that Android Studio expects the ARGB format (#AARRGGBB) <br>
 For example : #0A6AC8 (70% transparency) is #B30A6AC8 in Android Studio
 
 Go to settings on your phone to switch between `light mode` and `dark mode`
