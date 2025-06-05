@@ -4,9 +4,9 @@
 ### 1.1 Set compile environment to jdk8
 > **Note**: the source code project is built based on JDK8. Please kindly choose JDK8 to compile the project
 Download jdk8: https://adoptium.net/temurin/releases/?version=8    (choose Windows x64 and .msi) <br>
-​Run the Installer <br>
+Run the Installer <br>
 
-Go to `File` > `Settings` > `Build, Execution, Deployment` > `Build Tools` > `Gradle`​
+Go to `File` > `Settings` > `Build, Execution, Deployment` > `Build Tools` > `Gradle`
 ![Screenshot 2025-05-09 144326](https://github.com/user-attachments/assets/3a3fc2d5-584c-404b-b45b-e4ce7b426027)
 Select `Gradle JDK` <br>
 select `Add JDK from disk...` <br>
@@ -171,9 +171,9 @@ Modify the `App.kt` file to configure and customize the features of your applica
 ![image](https://github.com/user-attachments/assets/fe2a1392-af3d-4345-b36b-5e6d3c856ce7)
 
 ### 6.1 Generate aab file
-Select the ​​`Android App Bundle`​​ radio button (first option)
+Select the `Android App Bundle` radio button (first option)
 ### 6.2 Generate apk file
-Select the ​​`APK`​​ radio button (second option)
+Select the `APK` radio button (second option)
 
 ### 6.3 If you do not have a key store
 Click `Create new...` and Android Studio will guide you through the process of creating a key store
