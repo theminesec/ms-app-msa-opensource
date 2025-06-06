@@ -47,7 +47,7 @@ Update the basic information of your application, such as the **package name** a
 Edit `namespace` and `applicationId` in `app/build.gradle.kts` file <br>
 
 ```kotlin
-Example:
+// Example:
 namespace = "com.minesec.b"
 applicationId = "com.minesec.b"
 ```
