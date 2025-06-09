@@ -149,8 +149,8 @@ Customize the `strings.xml` file with your own information. Ensure support for m
 - `values-ckb` (Kurdish)
 
 
-Copy `strings.xml` from `app/src/main/res/values/` and paste into `strings.xml` from `app/src/main/res/values-xx/` <br>
-Translate ALL strings
+Translate the strings in `strings.xml` from `app/src/main/res/values-xx/` <br>
+
 
 ```
 #Example:
