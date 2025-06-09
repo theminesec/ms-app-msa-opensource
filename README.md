@@ -4,9 +4,8 @@
 ### 1.1 Set compile environment to jdk8
 > **Note**: the source code project is built based on JDK8. Please kindly choose JDK8 to compile the project
 Download jdk8: https://adoptium.net/temurin/releases/?version=8    (choose Windows x64 and .msi) <br>
-Run the Installer <br>
-
 Go to `File` > `Settings` > `Build, Execution, Deployment` > `Build Tools` > `Gradle`
+
 ![Screenshot 2025-05-09 144326](https://github.com/user-attachments/assets/3a3fc2d5-584c-404b-b45b-e4ce7b426027)
 Select `Gradle JDK` <br>
 select `Add JDK from disk...` <br>
@@ -24,8 +23,8 @@ In your machine's global gradle properties:
 
 ```text file="~/.gradle/gradle.properties"
 # minesec client registry
-MINESEC_REGISTRY_LOGIN=minesec-product-support
-MINESEC_REGISTRY_TOKEN={token-value}
+GITHUB_USERNAME=minesec-product-support
+GITHUB_TOKEN={token-value}
 ```
 Replace the placeholder path with your actual keystore location:
 ```text file="~/.gradle/gradle.properties"
@@ -48,7 +47,7 @@ Update the basic information of your application, such as the **package name** a
 Edit `namespace` and `applicationId` in `app/build.gradle.kts` file <br>
 
 ```kotlin
-Example:
+// Example:
 namespace = "com.minesec.b"
 applicationId = "com.minesec.b"
 ```
@@ -64,17 +63,17 @@ Edit  `app/google-services.json` <br>
 
 ```kotlin
 //Example:
-// DO NOT CHANGE, re-cert require
-val majorVersion = 2
-// DO NOT CHANGE, re-cert require
-val minorVersion = 0
-// msa component lib version
-//val patchVersion: Int = 75
-val patchVersion: Int = libs.versions.mineSecMsaLibs.get().takeLast(3).takeLastWhile { it.isDigit() }.toInt()
-// license update, build config changes
-val buildVersion = 1
-// MineSec
-val customerId = 111 //changes were made
+        // DO NOT CHANGE, re-cert require
+        val majorVersion = 2
+        // DO NOT CHANGE, re-cert require
+        val minorVersion = 0
+        // msa component lib version
+        //val patchVersion: Int = 75
+        val patchVersion: Int = libs.versions.mineSecMsaLibs.get().takeLast(3).takeLastWhile { it.isDigit() }.toInt()
+        // license update, build config changes
+        val buildVersion = 1
+        // MineSec
+        val customerId = 111 //changes were made
 ```
 
 ### 2.3 Replace license
@@ -95,18 +94,8 @@ In `app/build.gradle.kts`, modify the string to match the name of your license:
 - **Full Logo**: Displayed on the activation UI page.
 - **Square Logo**: Used in some loading indicators.
 - Recommended sizes:
-  - **Full Logo**: `240 × 60`
-  - **Square Logo**: `60 × 60`
-- Place these vector files in both the `drawable` and `drawable-night` folders in your application.
-
-
-## 3. Branding & Visual Adjustment
-### 3.1 Replace the logo
-- **Full Logo**: Displayed on the activation UI page.
-- **Square Logo**: Used in some loading indicators.
-- Recommended sizes:
-  - **Full Logo**: `240 × 60`
-  - **Square Logo**: `60 × 60`
+    - **Full Logo**: `240 × 60`
+    - **Square Logo**: `60 × 60`
 - Place these vector files in both the `drawable` and `drawable-night` folders in your application.
 
 ### 3.1 Change application logos
@@ -143,7 +132,7 @@ Click on `English` to change the language
 Go to `app/src/main/res/values/strings.xml`<br>
 Click on `Open editor`
 ![image](https://github.com/user-attachments/assets/48afaa50-d71e-4e5f-9aa3-0e8e757b17e5)
-Click on the icon
+Click on the icon 
 ![image](https://github.com/user-attachments/assets/934a9487-33a8-4dd1-9409-8ac59cda67b1) <br>
 Select the language you want to add <br>
 Ensure that your device is set to the language that you just added. Close the app completely (swipe it away from recent apps) and reopen it.
@@ -196,7 +185,8 @@ Click `Create new...` and Android Studio will guide you through the process of c
 Click `Choose existing...` and select the key store that you created before
 
 Make sure your credentials in machine's global `gradle.properties` matches the key store that you are using.
-Fill in the  `Keystore password`, `key alias` and `Key password`
+
+Fill in the  `Keystore password`, `key alias` and `Key password` 
 Click `Next`
 Choose `release`
 Click `Create`
