@@ -24,8 +24,8 @@ In your machine's global gradle properties:
 
 ```text file="~/.gradle/gradle.properties"
 # minesec client registry
-GITHUB_USERNAME=minesec-product-support
-GITHUB_TOKEN={token-value}
+MINESEC_REGISTRY_LOGIN=minesec-product-support
+MINESEC_REGISTRY_TOKEN={token-value}
 ```
 Replace the placeholder path with your actual keystore location:
 ```text file="~/.gradle/gradle.properties"
