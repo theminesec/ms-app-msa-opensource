@@ -3,7 +3,7 @@ kotlin = "1.8.20"
 
 # MineSec
 mineSecMineHades = "1.10.105.12.69"
-mineSecMsaLibs = "2.0.132"
+mineSecMsaLibs = "2.0.133"
 minesecToolKit = "1.1.13"
 visaSensory = "2.2"
 
