@@ -274,7 +274,6 @@ dependencies {
     // gms
 //    implementation(libs.gms.safetynet)
     // sentry
-    implementation(libs.sentry.android)
     // Language
     implementation(libs.lingver)
     // PayServer
@@ -282,7 +281,6 @@ dependencies {
     implementation(libs.poslib)
     // Printer
     implementation(libs.ominidriver)
-    implementation(libs.nexgodriver)
     // ULID
     implementation(libs.ulid)
 }
