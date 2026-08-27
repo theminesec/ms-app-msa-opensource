@@ -2,13 +2,13 @@
 kotlin = "1.8.20"
 
 # MineSec
-mineSecMineHades = "1.10.105.12.40"
-mineSecMsaLibs = "2.0.93"
-minesecToolKit = "1.1.13"
+mineSecMineHades = "1.10.105.12.77"
+mineSecMsaLibs = "2.0.157"
+minesecToolKit = "1.1.14"
 visaSensory = "2.2"
 
 # Android
-androidGradlePlugin = "8.1.1"
+androidGradlePlugin = "8.5.1"
 androidxAppCompat = "1.6.1"
 androidxCore = "1.12.0"
 androidxLifecycle = "2.6.2"
@@ -93,8 +93,8 @@ appcompatV7 = "28.0.0"
 # MineSec
 ms-sdk-minehades = { module = "com.theminesec.sdk:minehades", version.ref = "mineSecMineHades" }
 ms-sdk-minehades-stage = { module = "com.theminesec.sdk:minehades-stage", version.ref = "mineSecMineHades" }
-ms-app-msa-lib-model = { module = "com.theminesec.app:lib-model", version.ref = "mineSecMsaLibs" }
-ms-app-msa-lib-ui = { module = "com.theminesec.app:lib-ui", version.ref = "mineSecMsaLibs" }
+ms-app-msa-lib-model = { module = "com.theminesec.msalib:lib-model", version.ref = "mineSecMsaLibs" }
+ms-app-msa-lib-ui = { module = "com.theminesec.msalib:lib-ui", version.ref = "mineSecMsaLibs" }
 minesec-toolkit = { module = "io.github.songyao1987:MinesecToolKit", version.ref = "minesecToolKit" }
 visa-sensory = { module = "com.theminesec.utils:visa-sensory-branding", version.ref = "visaSensory" }
 
